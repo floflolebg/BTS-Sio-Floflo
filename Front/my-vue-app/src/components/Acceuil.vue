@@ -1,11 +1,8 @@
 <template>
-<p>Hello World</p>
+<h1>Helloworld</h1>
 </template>
 
 <script>
-export default {
-  name: "Acceuil"
-}
 </script>
 
 <style scoped>

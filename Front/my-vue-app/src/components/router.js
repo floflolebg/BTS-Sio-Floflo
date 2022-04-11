@@ -1,23 +1,21 @@
-import {createRouter} from "vue-router";
-import ( createWebHistory, createRouter())
-
+import {createRouter, createWebHistory} from "vue-router";
 const routes = [
     {
-        path: '/',
+        path: '/acceuil',
         alias:'/acceuil',
-        name: 'acceuil',
-        components: () => import("./components/Acceuil.vue")
+        name: 'Acceuil',
+        component: () => import('./Acceuil.vue')
     },
     {
-    path: '/crm',
+        path: '/crm',
         alias: '/crm',
-    name: '/crm',
-    components: () => import ("./components/CRM.vue")
+        name: 'crm',
+        component: () => import ("./Crm.vue")
     }
 ];
 const router =createRouter({
     history: createWebHistory(),
-    routes
+    routes,
 });
 
 export default router;
